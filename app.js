@@ -1,17 +1,17 @@
 //Q1: Evaluate each of the following Javascript expressions and show the value
 
-console.log(-5 * 3);
-console.log("javascript" + 50);
-console.log(17 % 5);
-console.log(5 % 17);
-console.log(5 / 10);
-console.log(4 === "4");
-console.log(4 != 5);
-console.log(7 <= 8);
-console.log("Hello" + 5);
-let n = 10.5;
-console.log(Math.ceil(n) - Math.floor(n));
-console.log(Math.pow(n, 2));
+// console.log(-5 * 3);
+// console.log("javascript" + 50);
+// console.log(17 % 5);
+// console.log(5 % 17);
+// console.log(5 / 10);
+// console.log(4 === "4");
+// console.log(4 != 5);
+// console.log(7 <= 8);
+// console.log("Hello" + 5);
+// let n = 10.5;
+// console.log(Math.ceil(n) - Math.floor(n));
+// console.log(Math.pow(n, 2));
 
 //Q2 : Read a number (using prompt) and display it using alert
 // let y = prompt("Enter Number : ");
@@ -76,3 +76,60 @@ console.log(Math.pow(n, 2));
 //     alert("PLEASE TRY AGAIN");
 //     break;
 // }
+
+
+
+//-----------------
+
+//Q7:Use a loop to display the numbers 0 through 5, each in a separate alert window.
+
+
+// for (let index = 0; index <= 5; index++) {
+// alert(index);
+// }
+
+
+//Q8:Use a loop to display the numbers 0 through 5 in a single alert window
+
+
+// var x=[];
+// for (let index = 0; index <= 5; index++) {
+//   x.push(index);
+ 
+//   }
+//   alert(x);
+
+//Q9:Use a loop to display the numbers in the range 0…20 that are multiples of 3. 
+// for (let i = 0; i <= 20; i++) {
+//  if(i % 3 == 0)
+//   alert(i);
+// }
+
+// //Q10:Prompt the user for a number in the range 0…100.  If the number is out of range, display an error message and prompt again until a valid number is entered.  Assume the user enters a number each time
+
+// let number=parseFloat(prompt("Enter Number from 0 to 100"));
+
+// if(number<=100 && number >=0)
+//   {
+//     alert("thanks");
+//   }
+
+// else{
+//   while(number >100 || number <0){
+//     let number=prompt("Enter Number from 0 to 100" );
+    
+// if(number<=100 && number >=0)
+//   {
+// break;  }
+//   }
+// }
+
+
+//Q11: Prompt for an integer, then display the sum of the integers from 0 through the number entered.  For example, if you enter 10, then display 55 which is the sum of   0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
+
+// let num=parseInt(prompt('Enter Number : '));//10
+// var sum=0;
+// for(let i=0;i<=num;i++){
+//  sum=sum+i;
+// }
+// alert(sum);

@@ -231,7 +231,7 @@
 // Write a function (Agechecker) that checks age of the user if the age is larger than or equal 18, the output will be ( The user is Adult ) else ( The user is Minor) 
 // Use ternary operator
 
-
+//using if / else 
 // function Agechecker(age){
 //     if(age >= 18)
 //         {
@@ -242,4 +242,13 @@
 //         }
 // }
 // Agechecker(20);
+// Agechecker(17);
+
+
+//using ternary operator
+// function Agechecker(age){
+//     (age>=18)?console.log("The user is Adult") : console.log("The user is Minor");
+
+// }
+//  Agechecker(20);
 // Agechecker(17);

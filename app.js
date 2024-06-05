@@ -79,7 +79,7 @@
 
 
 
-//-----------------
+//-------------------------------------------------------------------------------
 
 //Q7:Use a loop to display the numbers 0 through 5, each in a separate alert window.
 
@@ -133,3 +133,113 @@
 //  sum=sum+i;
 // }
 // alert(sum);
+
+//-------------------------------------------------------------------------------
+
+//task 3
+
+// Q1 :
+//  Write a JavaScript function that reverses a number.
+// Example x = 532443;
+// Expected Output : 344235
+
+
+//way 1 :
+// function reverseNumber(number){
+//     let num = number.toString();                  //String(number)
+// for(let i=num.length-1;i>=0;i--){
+//     let sum= "";
+//     sum+=num[i];
+//     document.write(sum);
+// }
+// }
+// reverseNumber(532443);
+
+// //way 2 :
+// let reverseNumber=function (number){
+//       let x=number.toString();
+//     return alert(x.split("").reverse().join(""));
+//     }
+//  reverseNumber(532443);
+
+
+
+// Q2 :
+//   Use a loop that iterates from 0 to 15. For each iteration, it checks if the current number is odd or even, and displays a message on the console .
+
+// Example  :
+// "0 is even"
+// "1 is odd"
+
+// for(let i =0;i<=15;i++){
+//     if(i%2 === 0)
+//                 {
+//                  console.log(i + " even number");   
+//                 }
+//                 else{
+//                     console.log(i + " odd number");   
+        
+//                 }
+// }
+
+
+
+
+// Q3 : 
+// Write a function that returns a string that has letters in alphabetical order.
+// Example string : 'Orange'
+// Expected Output : 'aegnor'
+// Assume punctuation and numbers symbols are not included in the passed string.
+
+//way1:
+// function sortString(stringg){
+//     return stringg.split("").sort().join("");
+// }
+// console.log(sortString("orange"));
+
+//way 2 using arrow function
+// let sortString = (stringg) => {
+//     return stringg.split("").sort().join("");
+// };
+
+
+
+// Q4 : 
+//  Write a JavaScript program that accepts a number as input and inserts dashes (-) between each even number. For example if you accept 025468 the output should be 0-254-6-8.
+
+// function numbers(num){
+//     let arr=[];
+//    let x=num.toString();
+//    for(let i=0;i<=x.length-1;i++){
+//     if(x[i]%2==0 && x[i+1]%2==0)
+//         {
+//            arr.push(x[i] + "-");
+//         }
+//         else{
+//             arr.push(x[i]);
+
+//         }
+//    }
+//    let arrayToString=arr.join("");
+// console.log(arrayToString);}
+// numbers(425468);
+
+
+
+
+// Q5: 
+// Write a function (Agechecker) that checks age of the user if the age is larger than or equal 18, the output will be ( The user is Adult ) else ( The user is Minor) 
+// Use ternary operator
+
+
+// function Agechecker(age){
+//     if(age >= 18)
+//         {
+//             console.log("The user is Adult");
+//         }
+//         else{
+//             console.log("The user is Minor");
+//         }
+// }
+// Agechecker(20);
+// Agechecker(17);

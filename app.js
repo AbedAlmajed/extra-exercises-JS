@@ -252,3 +252,43 @@
 // }
 //  Agechecker(20);
 // Agechecker(17);
+
+
+//=========================================================================================
+//task4
+
+//Q1 : Assume an array of different fruits is given (5 elements), you have to use dom to add images for all  items of the array to the html element as (ul) and show it in the html file.  give it a suitable style.
+let fruit=["apple","banana","orange","kiwi","lemon"];
+for(let i=1;i<=fruit.length;i++){
+    let element=document.createElement("li");
+    let image=document.createElement("img");
+    image.style.width="200px";
+    image.style.height="200px";
+
+   element.style.padding="20px";
+    let x=image.setAttribute("src","./images/image" + [i] + ".jfif");
+    element.appendChild(image);
+    let ull=document.getElementById("uniq");
+    ull.appendChild(element);
+}
+
+
+
+
+
+
+
+//Q2 : Create a function that takes two arguments, one is an array and the other is a number, then return the index of the given value or return -1 if the element cannot be found.
+// let x=[1,2,3,4,5];
+// function number(x,num){
+// for(let i=0;i<=x.length;i++){
+
+//     if(x[i]===num){
+//       return i;
+
+//     }
+//     return -1;
+// }
+
+// }
+// console.log(number(x,20));
